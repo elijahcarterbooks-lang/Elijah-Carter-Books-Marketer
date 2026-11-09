@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Elijah Carter | Book Marketing Enquiries</title>
+<meta name="description" content="Tell Elijah Carter about your book and receive a tailored book marketing proposal.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script>try{if(sessionStorage.l)document.documentElement.classList.add("seen");sessionStorage.l=1}catch(e){}</script>
+</head><body>
+<header class="site-header" id="site-header"></header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><h1 class="grad-text">Tell me about your book.</h1><p class="lead" style="margin-top:18px">Share the details below and I will reply by email with next steps and a tailored proposal.</p></div></section>
+<section style="padding-top:50px"><div class="wrap">
+<form id="contact-form" action="https://formspree.io/f/xwllqpzg" method="POST" enctype="multipart/form-data" novalidate>
+<input type="hidden" name="_subject" value="New enquiry from elijahcarter website">
+<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="field"><label for="name">Name</label><input id="name" name="name" required autocomplete="name"><span class="err" id="name-err"></span></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"><span class="err" id="email-err"></span></div>
+<div class="field"><label for="book">Book title</label><input id="book" name="book_title" required><span class="err" id="book-err"></span></div>
+<div class="field"><label for="genre">Genre</label><input id="genre" name="genre"></div>
+<div class="field"><label for="stage">Publishing stage</label><select id="stage" name="publishing_stage"><option value="">Select</option><option>Writing</option><option>Editing</option><option>Pre-launch</option><option>Recently published</option><option>Published, seeking growth</option></select></div>
+<div class="field"><label for="service">Desired service</label><select id="service" name="desired_service"><option value="">Select</option><option>Complete Book Marketing Strategy</option><option>Amazon Book Marketing and Optimization</option><option>Goodreads Promotion</option><option>Book Launch Campaign</option><option>Book Trailer Creation</option><option>Author Branding</option><option>Email Marketing</option><option>Book Publicity</option><option>Author Website Development</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="budget">Project budget</label><input id="budget" name="budget" placeholder="Optional"></div>
+<div class="field"><label for="timeline">Project timeline</label><input id="timeline" name="timeline" placeholder="For example, launching in 3 months"></div>
+<div class="field full"><label for="message">Message</label><textarea id="message" name="message" required></textarea><span class="err" id="message-err"></span></div>
+<div class="field full"><label for="files">Book cover or project documents</label><input id="files" name="attachment" type="file" accept=".png,.jpg,.jpeg,.pdf,.doc,.docx"></div>
+<div class="field full"><button class="btn btn-gold" type="submit">Send enquiry</button></div>
+<div class="status" id="form-status" role="status" aria-live="polite"></div>
+</form></div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="script.js"></script>
+</body></html>
